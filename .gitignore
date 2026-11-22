@@ -1,0 +1,23 @@
+
+# Database configuration and secrets
+config/database.php
+.env
+.env.*
+!.env.example
+
+# Personal timetable and uploaded files
+verified_timetable.json
+uploads/
+
+# Temporary testing files
+check_api.php
+php_check.php
+test_db.php
+
+# Unnecessary files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+vendor/
+node_modules/
