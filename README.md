@@ -1,3 +1,4 @@
+
 # AI Personalized Study Planner
 
 ## Project Overview
@@ -58,34 +59,13 @@ The system provides timetable management, automated study planning, study remind
 
 ```text
 student_assistant/
-│
 ├── api/
-│   ├── chat.php
-│   └── external_ai.php
-│
 ├── assets/
-│   ├── css/
-│   ├── images/
-│   └── js/
-│
 ├── pages/
-│   ├── progress_dashboard.php
-│   ├── study_planner.php
-│   ├── study_chatbot.php
-│   ├── study_history.php
-│   ├── reminders.php
-│   └── other application pages
-│
 ├── python/
-│   ├── tesseract_test.py
-│   ├── timetable_ocr.py
-│   └── timetable_parser.py
-│
+├── screenshots/
+│   └── dashboard.png
 ├── sql/
-│   ├── schema.sql
-│   └── migrate.sql
-│
-├── save_timetable.php
 ├── index.php
 └── README.md
 ```
@@ -105,28 +85,18 @@ student_assistant/
 
 1. Install and open XAMPP.
 2. Start Apache and MySQL.
-3. Place the project folder inside:
-
-   `C:\xampp\htdocs\`
-
-4. Open phpMyAdmin:
-
-   `http://localhost/phpmyadmin/`
-
-5. Create a MySQL database named:
-
-   `student_assistant`
-
-6. Import the SQL files from the project's `sql` folder, following the required schema and migration order.
+3. Place the project folder inside `C:\xampp\htdocs\`.
+4. Open [phpMyAdmin](http://localhost/phpmyadmin/).
+5. Create a database named `student_assistant`.
+6. Import the SQL files from the `sql` folder in the required order.
 7. Configure your local database connection in `config/database.php`.
-8. Open the project in your browser:
+8. Open the project:
 
    `http://localhost/student_assistant/`
 
 ## Database
 
-The project uses MySQL to store and manage academic information, including:
-
+The project uses MySQL to store and manage:
 - Study sessions
 - Timetable information
 - Student progress
@@ -148,10 +118,11 @@ The main purpose of this project is to help students manage their academic sched
 
 ## Developer
 
-**Project Name:** AI Personalized Study Planner  
-**Domain:** Artificial Intelligence and Full Stack Web Development  
-**Backend:** PHP and MySQL  
-**Frontend:** HTML, CSS and JavaScript
+- **Project Name:** AI Personalized Study Planner
+- **Domain:** Artificial Intelligence and Full Stack Web Development
+- **Backend:** PHP and MySQL
+- **Frontend:** HTML, CSS and JavaScript
+
 ---
 
 ## Application Screenshots
