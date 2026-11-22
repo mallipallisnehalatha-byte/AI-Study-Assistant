@@ -152,3 +152,10 @@ The main purpose of this project is to help students manage their academic sched
 **Domain:** Artificial Intelligence and Full Stack Web Development  
 **Backend:** PHP and MySQL  
 **Frontend:** HTML, CSS and JavaScript
+---
+
+## Application Screenshots
+
+### Main Dashboard
+
+![AI Study Planner Dashboard](screenshots/dashboard.png)
