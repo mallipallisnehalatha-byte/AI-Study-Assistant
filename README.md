@@ -125,6 +125,113 @@ The main purpose of this project is to help students manage their academic sched
 
 ---
 
+## Database ER Diagram
+
+```mermaid
+erDiagram
+    STUDENTS {
+        int id PK
+        varchar name
+        varchar email
+        varchar password
+        timestamp created_at
+    }
+
+    SUBJECTS {
+        int id PK
+        int student_id FK
+        varchar subject_name
+        enum difficulty_level
+    }
+
+    TEACHERS {
+        int id PK
+        int student_id FK
+        varchar teacher_name
+        int subject_id FK
+    }
+
+    TIMETABLE {
+        int id PK
+        int student_id FK
+        int subject_id FK
+        int teacher_id FK
+        enum day
+        time start_time
+        time end_time
+    }
+
+    UPLOADED_TIMETABLES {
+        int id PK
+        int student_id FK
+        varchar file_name
+        varchar file_path
+        text extracted_text
+    }
+
+    STUDY_SESSIONS {
+        int id PK
+        int student_id FK
+        varchar subject
+        date study_date
+        time start_time
+        time end_time
+        enum status
+    }
+
+    EVENING_STUDY_SESSIONS {
+        int id PK
+        int student_id FK
+        varchar subject
+        date study_date
+        time start_time
+        time end_time
+        enum status
+    }
+
+    PROGRESS {
+        int id PK
+        int student_id FK
+        int session_id
+        varchar subject
+        int minutes_spent
+        text activity
+        timestamp recorded_at
+    }
+
+    REMINDERS {
+        int id PK
+        int student_id FK
+        varchar subject
+        datetime reminder_time
+        enum status
+    }
+
+    CHAT_HISTORY {
+        int id PK
+        int student_id FK
+        text user_message
+        text ai_response
+        timestamp created_at
+    }
+
+    STUDENTS ||--o{ SUBJECTS : has
+    STUDENTS ||--o{ TEACHERS : has
+    STUDENTS ||--o{ TIMETABLE : owns
+    STUDENTS ||--o{ STUDY_SESSIONS : creates
+    STUDENTS ||--o{ EVENING_STUDY_SESSIONS : creates
+    STUDENTS ||--o{ PROGRESS : records
+    STUDENTS ||--o{ REMINDERS : receives
+    STUDENTS ||--o{ CHAT_HISTORY : has
+    STUDENTS ||--o{ UPLOADED_TIMETABLES : uploads
+
+    SUBJECTS ||--o{ TEACHERS : assigned_to
+    SUBJECTS ||--o{ TIMETABLE : scheduled_in
+    TEACHERS ||--o{ TIMETABLE : teaches
+```
+
+**Note:** Relationships are inferred from matching column names. The database currently has no enforced foreign-key constraints. The `progress.session_id` relationship needs further verification.
+
 ## System Architecture
 
 ```mermaid
