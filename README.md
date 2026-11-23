@@ -130,3 +130,6 @@ The main purpose of this project is to help students manage their academic sched
 ### Main Dashboard
 
 ![AI Study Planner Dashboard](screenshots/dashboard.png)
+### Study Planner
+
+![AI Study Planner](screenshots/study_planner.png)
