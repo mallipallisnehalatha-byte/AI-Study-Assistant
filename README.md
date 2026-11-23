@@ -142,3 +142,6 @@ The main purpose of this project is to help students manage their academic sched
 ### Study Reminders
 
 ![Study Reminders](screenshots/reminders.png)
+### Evening Study
+
+![Evening Study](screenshots/evening_study.png)
