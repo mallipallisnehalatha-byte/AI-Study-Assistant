@@ -136,3 +136,9 @@ The main purpose of this project is to help students manage their academic sched
 ### Study History
 
 ![Study History](screenshots/study_history.png)
+### Study History
+
+![Study History](screenshots/study_history.png)
+### Study Reminders
+
+![Study Reminders](screenshots/reminders.png)
