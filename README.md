@@ -133,3 +133,6 @@ The main purpose of this project is to help students manage their academic sched
 ### Study Planner
 
 ![AI Study Planner](screenshots/study_planner.png)
+### Study History
+
+![Study History](screenshots/study_history.png)
