@@ -148,3 +148,6 @@ The main purpose of this project is to help students manage their academic sched
 ### AI Study Recommendations
 
 ![AI Study Recommendations](screenshots/study_recommendations.png)
+### AI Study Assistant Chatbot
+
+![AI Study Assistant Chatbot](screenshots/study_chatbot.png)
