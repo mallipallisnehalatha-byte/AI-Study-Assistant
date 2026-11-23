@@ -145,3 +145,6 @@ The main purpose of this project is to help students manage their academic sched
 ### Evening Study
 
 ![Evening Study](screenshots/evening_study.png)
+### AI Study Recommendations
+
+![AI Study Recommendations](screenshots/study_recommendations.png)
