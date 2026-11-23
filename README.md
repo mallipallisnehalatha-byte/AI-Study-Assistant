@@ -125,6 +125,43 @@ The main purpose of this project is to help students manage their academic sched
 
 ---
 
+## System Architecture
+
+```mermaid
+flowchart TD
+    A[Student / User] --> B[Web Browser]
+
+    B --> C[Frontend]
+    C --> D[HTML, CSS, JavaScript]
+
+    D --> E[PHP Backend]
+
+    E --> F[Timetable Management]
+    E --> G[Study Planner]
+    E --> H[Progress Tracking]
+    E --> I[Study Reminders]
+    E --> J[Study History]
+    E --> K[AI Study Assistant]
+
+    F --> L[Python OCR]
+    L --> M[Tesseract OCR]
+
+    G --> N[(MySQL Database)]
+    F --> N
+    H --> N
+    I --> N
+    J --> N
+    K --> N
+
+    G --> O[Personalized Study Schedule]
+    H --> P[Progress Reports]
+    K --> Q[Offline Educational Responses]
+    
+    O --> B
+    P --> B
+    Q --> B
+```
+
 ## Application Screenshots
 
 ### Main Dashboard
